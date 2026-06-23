@@ -10,7 +10,7 @@ const navLinks = [
   { href: "/menu", label: "Menu", description: "Browse what we're serving" },
   { href: "/contact", label: "Contact", description: "Get in touch with us" },
   {
-    href: "/auth",
+    href: "/account",
     label: "Sign In / Register",
     description: "Join our rewards program",
   },
