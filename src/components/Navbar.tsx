@@ -4,10 +4,13 @@ import Link from "next/link";
 import { useState } from "react";
 import { useCart } from "@/context/CartContext";
 import CartDrawer from "./CartDrawer";
+import { useSession, signOut } from "next-auth/react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { cartItems } = useCart();
+
+  const { data: session } = useSession();
 
   const itemCount = cartItems.reduce((total, item) => total + item.quantity, 0);
 
@@ -46,6 +49,21 @@ export default function Navbar() {
           >
             About
           </Link>
+          {session ? (
+            <button
+              onClick={() => signOut({ callbackUrl: "/" })}
+              className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              Sign Out
+            </button>
+          ) : (
+            <Link
+              href="/account"
+              className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              Sign In
+            </Link>
+          )}
         </div>
 
         <button
