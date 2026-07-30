@@ -1,11 +1,6 @@
 import Link from "next/link";
 
 const navLinks = [
-  {
-    href: "/posts",
-    label: "Posts",
-    description: "Latest updates from our kitchen",
-  },
   { href: "/about", label: "About Us", description: "Our story and mission" },
   { href: "/menu", label: "Menu", description: "Browse what we're serving" },
   { href: "/contact", label: "Contact", description: "Get in touch with us" },
@@ -23,7 +18,7 @@ export default function Home() {
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap');
 
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+       
 
         body {
           background-color: #faf7f2;
