@@ -26,7 +26,8 @@ export default function AboutPage() {
           </h2>
           <p className="text-gray-500 leading-relaxed">
             To bring people together through honest, flavorful food. We believe
-            a great meal is more than sustenance — it's a moment worth savoring.
+            a great meal is more than sustenance — it&apos;s a moment worth
+            savoring.
           </p>
         </div>
 
@@ -46,8 +47,8 @@ export default function AboutPage() {
             Our Community
           </h2>
           <p className="text-gray-500 leading-relaxed">
-            This place was built for the neighborhood. We're proud to be a space
-            where regulars feel at home and newcomers are always welcome.
+            This place was built for the neighborhood. We&apos;re proud to be a
+            space where regulars feel at home and newcomers are always welcome.
           </p>
         </div>
       </div>
